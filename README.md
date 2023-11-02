@@ -39,11 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## ✅ Running Tests
 
-To run tests for a specific day's solution, navigate to the corresponding `pkg` directory and run:
-
-```sh
-go test
-```
+Tests? hahahaha.. right xD... you think this code needs testing? 💀💀
 
 ## 📜 License
 
