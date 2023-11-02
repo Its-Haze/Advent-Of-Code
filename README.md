@@ -45,11 +45,11 @@ To run tests for a specific day's solution, navigate to the corresponding `pkg` 
 go test
 ```
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 Thanks to Eric Wastl, who created Advent of Code.
 Thanks to everyone who creates and shares their solutions and explanations.
