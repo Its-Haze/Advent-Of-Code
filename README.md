@@ -53,5 +53,3 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Thanks to Eric Wastl, who created Advent of Code.
 Thanks to everyone who creates and shares their solutions and explanations.
-
-Feel free to customize the README to fit your preferences and add more details as your project evolves.
