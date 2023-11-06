@@ -11,20 +11,19 @@ import (
 )
 
 func main() {
-	//input, err := os.ReadFile(filepath.Join("input", "2022", "day01.txt"))
-	/* 	if err != nil {
-		log.Fatal(err)
-	} */
 
 	file, err := os.Open(filepath.Join("input", "2022", "day01.txt"))
-	defer file.Close()
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	defer file.Close()
+
 	scanner := bufio.NewScanner(file)
 
-	result := day01.Solve(scanner)
-	fmt.Println("Result:", result)
+	result, result2 := day01.Solve(scanner)
+	fmt.Println("Result1:", result)
+	fmt.Println("Result2:", result2)
+
 }

@@ -3,6 +3,7 @@ package day01
 import (
 	"bufio"
 	"fmt"
+	"sort"
 	"strconv"
 )
 
@@ -53,10 +54,21 @@ func HighestCalorieElve(elves *[]Elf) int {
 
 }
 
-func Solve(scanner *bufio.Scanner) int {
+func Solve(scanner *bufio.Scanner) (int, int) {
 	var elves []Elf
 	ReadLineByLine(scanner, &elves)
-	highestCount := HighestCalorieElve(&elves)
+	return HighestCalorieElve(&elves), Part2(elves)
+}
 
-	return highestCount
+func Part2(elves []Elf) int {
+	// Sort the slice of elves
+	sort.Slice(elves, func(i, j int) bool { return elves[i].TotalCalories() > elves[j].TotalCalories() })
+
+	// Pick the top 3, and add their totals
+	finalResult := 0
+	for _, item := range elves[0:3] {
+		finalResult += item.TotalCalories()
+	}
+
+	return finalResult
 }
